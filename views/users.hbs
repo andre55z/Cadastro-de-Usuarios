@@ -20,14 +20,14 @@
             <td>{{email}}</td>
                 <td>
                     <div class="row g-2">
-                        <div class="col-8 col-md-4">
+                        <div class="col-12 col-md-6">
                             <form action="/edit" method="post">
                                 <input type="hidden" name="id" value="{{id}}">
                                 <button class="w-100 btn btn-info">Editar</button>
 
                             </form>
                         </div>
-                        <div class="col-8 col-md-4">
+                        <div class="col-12 col-md-6">
                             <form action="/delete" method="post">
                                 <input type="hidden" name="id" value="{{id}}">
                                 <button class="w-100 btn btn-danger">Deletar</button>
