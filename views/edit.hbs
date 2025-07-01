@@ -1,0 +1,27 @@
+{{#if error}}
+<div class="erro mt-4">
+    <div class="erro-body">
+        Houve um problema: {{problema}}
+    </div>
+</div>
+{{else}}
+<div class="bg-body-tertiary p-5 rounded mt-3"> 
+    <h1 >Editar</h1>
+    <form action="/update" method="post"> 
+        <div class="row mt-4">
+            <div class="col-md-5 mb-3">
+                <label for="nome" class="form-label">Nome completo</label>
+                <input type="hidden" value="{{id}}" name="id">
+                <input value="{{nome}}" type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">    
+            </div>
+            <div class="col-md-5 mb-3">
+                <label for="email" class="form-label">Endereço de e-mail</label>
+                <input value="{{email}}" type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">    
+            </div>
+            <div class="col-md-2">
+                <button class="mt-3 p-3 w-110 btn btn-warning">Salvar</button>
+            </div>
+        </div>
+    </form>
+</div>
+{{/if}}
