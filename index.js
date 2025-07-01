@@ -1,3 +1,4 @@
+const dotenv = require('dotenv');
 const express = require('express'); //exportando express
 const app = express();
 
